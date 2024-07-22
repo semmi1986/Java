@@ -27,6 +27,20 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("enter number");
 
+        int sum = 0;
+        while (true){
+            int number = Integer.parseInt(input.readLine());
+            sum+=number;
+            if (number == -1){
+                break;
+            }
+
+        }
+
+
+        System.out.println("сумму всех введенных чисел " + sum);
     }
 }

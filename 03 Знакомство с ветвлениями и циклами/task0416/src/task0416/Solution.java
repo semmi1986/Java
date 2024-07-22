@@ -2,6 +2,7 @@ package task0416;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Переходим дорогу вслепую
@@ -41,6 +42,24 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        System.out.println("время в минутах, прошедшее с начала очередного часа");
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        String num = input.readLine();
+        double minute = Double.parseDouble(num);
+
+        double time = minute % 5;
+
+
+
+        if (time >=0 && time < 3) {
+            System.out.println("зелёный");
+        } else if (time>=3 && time<4 ) {
+            System.out.println("жёлтый");
+        }else {
+            System.out.println("красный");
+        }
+
+        System.out.println("Остаток -> " + time);
 
     }
 }

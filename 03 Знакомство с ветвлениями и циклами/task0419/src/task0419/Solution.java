@@ -2,6 +2,7 @@ package task0419;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 /* 
 Максимум четырех чисел
@@ -18,6 +19,21 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        System.out.println("Введи 4 числа через пробел");
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        String str = input.readLine();
+        int[] numArr = Arrays.stream(str.split(" ")).mapToInt(Integer::parseInt).toArray();
+        int max = numArr[0];
+
+        for (int i = 0; i < numArr.length; i++) {
+            if(numArr[i] > max){
+                max = numArr[i];
+            }
+        }
+
+        System.out.println(max);
+
+
 
     }
 }

@@ -2,6 +2,7 @@ package task0421;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Objects;
 
 /* 
 Настя или Настя?
@@ -20,6 +21,22 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введи первое имя");
+        String name1 = input.readLine();
+        System.out.println("Введи второе имя");
+        String name2 = input.readLine();
+
+        if(Objects.equals(name1, name2)){
+            System.out.println("Имена идентичны");
+        }
+
+        if (name1.length() == name2.length()){
+            System.out.println("Длины имен равны");
+        }
+
+
+
 
     }
 }

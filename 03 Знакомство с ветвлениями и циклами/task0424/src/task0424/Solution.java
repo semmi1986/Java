@@ -24,6 +24,23 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введи первое число");
+        int num1 = Integer.parseInt(input.readLine());
+        System.out.println("Введи второе число");
+        int num2 = Integer.parseInt(input.readLine());
+        System.out.println("Введи третье число");
+        int num3 = Integer.parseInt(input.readLine());
+
+
+        if (num1 == num2) {
+            System.out.println("3");
+        } else if (num1 == num3) {
+            System.out.println("2");
+        }else {
+            System.out.println("1");
+        }
+
 
     }
 }

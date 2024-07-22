@@ -2,6 +2,7 @@ package task0414;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Количество дней в году
@@ -30,6 +31,16 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter year");
+        int year = input.nextInt();
+        if (year % 400 == 0 && year % 4 == 0){
+            System.out.println("количество дней в году: 366");
+        }else {
+            System.out.println("количество дней в году: 365");
+        }
+
         //напишите тут ваш код
 
     }
