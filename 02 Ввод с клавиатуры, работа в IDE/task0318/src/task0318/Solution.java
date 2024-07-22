@@ -27,5 +27,12 @@ import java.io.*;
 public class Solution {
     public static void main(String[] args) throws Exception {
         // Напишите ваш код здесь
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String a = reader.readLine();
+        String[] arr = a.split(" ");
+        String name = arr[0];
+        int number = Integer.parseInt(arr[1]);
+
+        System.out.println(name + " захватит мир через " + number + " лет. Му-ха-ха!");
     }
 }

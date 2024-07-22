@@ -2,6 +2,7 @@ package task0319;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /* 
 Предсказание на будущее
@@ -25,6 +26,16 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+        System.out.println("Enter your name");
+        Scanner input = new Scanner(System.in);
+        String name = input.nextLine();
+        System.out.println("Enter your number 1");
+        int number1 = input.nextInt();
+        System.out.println("Enter your number 2");
+        int number2 = input.nextInt();
+
+        System.out.println(name + " получает " + number1+ " через " + number2 + " лет.");
+
 
     }
 }
