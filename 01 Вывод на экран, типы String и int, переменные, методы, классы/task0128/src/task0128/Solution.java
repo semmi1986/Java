@@ -17,6 +17,8 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
+
+        sum(2,2);
         //напишите тут ваш код
     }
 
